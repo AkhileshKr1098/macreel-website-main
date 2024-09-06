@@ -5,7 +5,7 @@ $(document).ready(function(){
         console.log(formData);
         $.ajax({
             type: 'POST',
-            url: 'send_contact.php', // PHP script for sending email
+            url: 'send_contact', // PHP script for sending email
             data: formData,
             success: function (response) {
                 $('#contact-form')[0].reset(); // Reset the form
